@@ -1,0 +1,23 @@
+basePath: /api/v1
+host: localhost:8080
+info:
+  contact: {}
+  description: This is a sample server Petstore server.
+  license:
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: Swagger Example API
+  version: "1.0"
+paths:
+  /testGet:
+    get:
+      description: Swagger 설정 되었는지, API통신 가능한지 Test중
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+      summary: Swagger 설정 테스트...
+swagger: "2.0"
